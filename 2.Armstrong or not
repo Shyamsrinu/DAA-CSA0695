@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main(){
+	int n,r,sum=0,temp;
+	printf("enter the number= ");
+	scanf("%d",&n);
+	for(temp=n;n!=0;n=n/10){
+		r=n%10;
+		sum=sum+(r*r*r);
+	}
+	if(sum==temp)
+	printf("it is a armstrong:");
+	else
+	printf("it is not armstrong:");
+	return 0;
+}
